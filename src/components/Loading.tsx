@@ -109,7 +109,7 @@ export default Loading;
 
 export const setProgress = (setLoading: (value: number) => void) => {
   let percent: number = 0;
-  let interval: NodeJS.Timeout;
+  let interval: number;
 
   // Use a more efficient interval timing
   interval = setInterval(() => {
